@@ -1,0 +1,82 @@
+/* --- 1. GLOBAL RESET & FONTS --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* --- 2. DARK MODE THEME VARIABLES --- */
+:root {
+  --bg-color: #0a0a0a;
+  --text-color: #e0e0e0;
+  --accent-gradient: linear-gradient(90deg, #00d2ff 0%, #3a7bd5 100%);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* --- 3. HERO SECTION --- */
+#hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+#hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+/* --- THE GRADIENT TEXT EFFECT --- */
+.text-highlight {
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+#hero h2 {
+  font-size: 2rem;
+  color: #a0a0a0;
+  margin-bottom: 20px;
+}
+
+/* --- BUTTONS --- */
+.cta-container {
+  margin-top: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 0 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.btn-primary {
+  background: var(--accent-gradient);
+  color: #fff;
+  border: none;
+}
+
+.btn-secondary {
+  border: 2px solid #00d2ff;
+  color: #00d2ff;
+  background: transparent;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
