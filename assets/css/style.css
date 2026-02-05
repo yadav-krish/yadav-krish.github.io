@@ -339,3 +339,132 @@ header {
     gap: 40px;
   }
 }
+
+/* --- 8. SKILLS SECTION (Card Style) --- */
+#skills {
+  background-color: #0f0f0f;
+}
+
+.skills-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px; /* Space between categories */
+}
+
+.skill-category h3 {
+  font-size: 1.5rem;
+  color: #00d2ff; /* Your theme accent color */
+  margin-bottom: 25px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.skill-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skill-card {
+  background: #1a1a1a; /* Dark Card Background */
+  border: 1px solid #333; /* Subtle Border */
+  border-radius: 12px;
+  width: 140px; /* Fixed square width */
+  height: 140px; /* Fixed square height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+/* Icon Styling */
+.skill-card i {
+  font-size: 3.5rem; /* Make icons big! */
+  transition: transform 0.3s ease;
+}
+
+/* Text Styling */
+.skill-card p {
+  color: #e0e0e0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Hover Effects - The "Glow" */
+.skill-card:hover {
+  border-color: #00d2ff; /* Your Cyan Theme Color */
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 210, 255, 0.15);
+}
+
+.skill-card:hover i {
+  transform: scale(1.1); /* Icon pops out slightly */
+}
+
+/* Fix for Next.js icon visibility in dark mode */
+.white-icon {
+  color: #fff;
+}
+
+.skill-card img {
+  width: 60px; /* constrain width to match other icons */
+  height: 60px; /* constrain height */
+  object-fit: contain; /* ensures the logo doesn't get stretched/squashed */
+  transition: transform 0.3s ease; /* keeps the zoom hover effect */
+}
+
+/* Ensure the hover effect works on images too */
+.skill-card:hover img {
+  transform: scale(1.1);
+}
+
+/* --- COLORFUL ICONS FOR DOMAINS (Fixed & Isolated) --- */
+
+/* 1. Define the gradients strictly for these classes */
+.skill-card .icon-ml {
+  background: linear-gradient(135deg, #ff6b6b, #ffd93d);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skill-card .icon-ds {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skill-card .icon-ai {
+  background: linear-gradient(135deg, #d53369, #daae51);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skill-card .icon-llm {
+  background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skill-card .icon-web {
+  background: linear-gradient(135deg, #43e97b, #38f9d7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 2. FIX THE HOVER STATE */
+/* This ensures that when you hover the CARD, the icon turns solid WHITE */
+.skill-card:hover i[class*="icon-"] {
+  background: none; /* Remove gradient background */
+  -webkit-text-fill-color: #ffffff; /* Force solid white text */
+  color: #ffffff; /* Standard fallback */
+  transform: scale(1.1); /* Keep the pop effect */
+}
