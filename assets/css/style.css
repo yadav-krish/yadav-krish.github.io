@@ -411,10 +411,10 @@ header {
 }
 
 .skill-card img {
-  width: 60px; /* constrain width to match other icons */
-  height: 60px; /* constrain height */
-  object-fit: contain; /* ensures the logo doesn't get stretched/squashed */
-  transition: transform 0.3s ease; /* keeps the zoom hover effect */
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
 }
 
 /* Ensure the hover effect works on images too */
@@ -424,47 +424,66 @@ header {
 
 /* --- COLORFUL ICONS FOR DOMAINS (Fixed & Isolated) --- */
 
-/* 1. Define the gradients strictly for these classes */
+/* Define the gradients strictly for these classes */
+
 .skill-card .icon-ml {
   background: linear-gradient(135deg, #ff6b6b, #ffd93d);
+
   -webkit-background-clip: text;
+
   background-clip: text;
+
   -webkit-text-fill-color: transparent;
 }
 
 .skill-card .icon-ds {
   background: linear-gradient(135deg, #4facfe, #00f2fe);
+
   -webkit-background-clip: text;
+
   background-clip: text;
+
   -webkit-text-fill-color: transparent;
 }
 
 .skill-card .icon-ai {
   background: linear-gradient(135deg, #d53369, #daae51);
+
   -webkit-background-clip: text;
+
   background-clip: text;
+
   -webkit-text-fill-color: transparent;
 }
 
 .skill-card .icon-llm {
   background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+
   -webkit-background-clip: text;
+
   background-clip: text;
+
   -webkit-text-fill-color: transparent;
 }
 
 .skill-card .icon-web {
   background: linear-gradient(135deg, #43e97b, #38f9d7);
+
   -webkit-background-clip: text;
+
   background-clip: text;
+
   -webkit-text-fill-color: transparent;
 }
 
-/* 2. FIX THE HOVER STATE */
-/* This ensures that when you hover the CARD, the icon turns solid WHITE */
+/* FIX THE HOVER STATE */
+
 .skill-card:hover i[class*="icon-"] {
-  background: none; /* Remove gradient background */
-  -webkit-text-fill-color: #ffffff; /* Force solid white text */
-  color: #ffffff; /* Standard fallback */
-  transform: scale(1.1); /* Keep the pop effect */
+  background: none;
+
+  -webkit-text-fill-color: #ffffff;
+
+  color: #ffffff;
+
+  transform: scale(1.1);
 }
