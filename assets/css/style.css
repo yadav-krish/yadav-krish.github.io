@@ -247,7 +247,7 @@ header {
 
 /* ---  ABOUT SECTION --- */
 #about {
-  background-color: #111;
+  background-color: rgba(17, 17, 17, 0.429);
 }
 
 .about-content {
@@ -479,7 +479,7 @@ header {
 
 /* ---  SKILLS SECTION (Card Style) --- */
 #skills {
-  background-color: #0f0f0f;
+  background-color: rgba(17, 17, 17, 0.429);
 }
 
 .skills-wrapper {
