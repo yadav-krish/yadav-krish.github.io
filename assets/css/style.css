@@ -339,8 +339,54 @@ header {
     gap: 40px;
   }
 }
+/* --- SCROLLABLE CERTIFICATIONS & LINKS --- */
 
-/* --- 8. SKILLS SECTION (Card Style) --- */
+/* 1. Prevent Congestion: Scrollable Container */
+.cert-list.scrollable {
+  max-height: 450px; /* Match approximate height of Education column */
+  overflow-y: auto; /* Scroll vertically if content overflows */
+  padding-right: 10px; /* Space so text doesn't hit scrollbar */
+}
+
+/* Custom Scrollbar Styling (Optional - makes it look sleek) */
+.cert-list.scrollable::-webkit-scrollbar {
+  width: 6px;
+}
+.cert-list.scrollable::-webkit-scrollbar-track {
+  background: #111;
+}
+.cert-list.scrollable::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 3px;
+}
+.cert-list.scrollable::-webkit-scrollbar-thumb:hover {
+  background: #00d2ff; /* Cyan hover */
+}
+
+/* 2. Card Layout Update for Link */
+.cert-card {
+  display: flex;
+  justify-content: space-between; /* Pushes link to far right */
+  align-items: center;
+  /* keep your existing padding/background/border styles here */
+}
+
+/* 3. The Link Icon Styling */
+.cert-link {
+  color: #555;
+  font-size: 1.1rem;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+  padding: 10px; /* Hit area for easier clicking */
+}
+
+.cert-link:hover {
+  color: #00d2ff; /* Cyan glow on hover */
+  transform: translate(3px, -3px); /* Moves diagonally up-right */
+}
+
+/* ---  SKILLS SECTION (Card Style) --- */
 #skills {
   background-color: #0f0f0f;
 }
