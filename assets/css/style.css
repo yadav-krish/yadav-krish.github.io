@@ -176,24 +176,33 @@ header {
   color: #ccc;
 }
 
-/* Highlight important keywords */
 .about-text strong {
   color: #fff;
   font-weight: 600;
 }
-
 .img-card {
-  width: 300px;
-  height: 300px;
-  background: linear-gradient(135deg, #222, #333);
+  width: 320px;
+  height: 380px;
   border-radius: 20px;
-  margin: 0 auto;
   position: relative;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   border: 1px solid #333;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
-/* A decorative border effect */
+.img-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.img-card:hover img {
+  transform: scale(1.05);
+}
+
 .img-card::before {
   content: "";
   position: absolute;
@@ -205,10 +214,6 @@ header {
   border-radius: 20px;
   z-index: -1;
   transition: transform 0.3s ease;
-}
-
-.img-card:hover::before {
-  transform: translate(5px, 5px);
 }
 /* --- MOBILE RESPONSIVENESS --- */
 @media (max-width: 768px) {
@@ -341,14 +346,14 @@ header {
 }
 /* --- SCROLLABLE CERTIFICATIONS & LINKS --- */
 
-/* 1. Prevent Congestion: Scrollable Container */
+/*  Prevent Congestion: Scrollable Container */
 .cert-list.scrollable {
-  max-height: 450px; /* Match approximate height of Education column */
-  overflow-y: auto; /* Scroll vertically if content overflows */
-  padding-right: 10px; /* Space so text doesn't hit scrollbar */
+  max-height: 450px;
+  overflow-y: auto;
+  padding-right: 10px;
 }
 
-/* Custom Scrollbar Styling (Optional - makes it look sleek) */
+/* Custom Scrollbar Styling */
 .cert-list.scrollable::-webkit-scrollbar {
   width: 6px;
 }
@@ -360,30 +365,29 @@ header {
   border-radius: 3px;
 }
 .cert-list.scrollable::-webkit-scrollbar-thumb:hover {
-  background: #00d2ff; /* Cyan hover */
+  background: #00d2ff;
 }
 
-/* 2. Card Layout Update for Link */
+/* Card Layout Update for Link */
 .cert-card {
   display: flex;
-  justify-content: space-between; /* Pushes link to far right */
+  justify-content: space-between;
   align-items: center;
-  /* keep your existing padding/background/border styles here */
 }
 
-/* 3. The Link Icon Styling */
+/* The Link Icon Styling */
 .cert-link {
   color: #555;
   font-size: 1.1rem;
   transition:
     color 0.3s ease,
     transform 0.3s ease;
-  padding: 10px; /* Hit area for easier clicking */
+  padding: 10px;
 }
 
 .cert-link:hover {
-  color: #00d2ff; /* Cyan glow on hover */
-  transform: translate(3px, -3px); /* Moves diagonally up-right */
+  color: #00d2ff;
+  transform: translate(3px, -3px);
 }
 
 /* ---  SKILLS SECTION (Card Style) --- */
@@ -394,12 +398,12 @@ header {
 .skills-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 50px; /* Space between categories */
+  gap: 50px;
 }
 
 .skill-category h3 {
   font-size: 1.5rem;
-  color: #00d2ff; /* Your theme accent color */
+  color: #00d2ff;
   margin-bottom: 25px;
   border-bottom: 1px solid #333;
   padding-bottom: 10px;
@@ -442,7 +446,7 @@ header {
 
 /* Hover Effects - The "Glow" */
 .skill-card:hover {
-  border-color: #00d2ff; /* Your Cyan Theme Color */
+  border-color: #00d2ff;
   transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(0, 210, 255, 0.15);
 }
@@ -469,8 +473,6 @@ header {
 }
 
 /* --- COLORFUL ICONS FOR DOMAINS (Fixed & Isolated) --- */
-
-/* Define the gradients strictly for these classes */
 
 .skill-card .icon-ml {
   background: linear-gradient(135deg, #ff6b6b, #ffd93d);
