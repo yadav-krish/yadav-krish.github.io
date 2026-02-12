@@ -825,3 +825,185 @@ header {
   opacity: 0.9;
   box-shadow: 0 0 15px rgba(0, 210, 255, 0.4);
 }
+/* --- CONTACT SECTION --- */
+#contact {
+  background-color: rgba(20, 20, 20, 0.9);
+  padding-bottom: 80px;
+}
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 0;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* --- Left Side: Info --- */
+.contact-info {
+  background: rgba(0, 210, 255, 0.05);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-info h3 {
+  font-size: 2rem;
+  color: #00d2ff;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  color: #ccc;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  color: #e0e0e0;
+  font-size: 1.1rem;
+}
+
+.contact-item i {
+  color: #00d2ff;
+  font-size: 1.2rem;
+}
+
+/* Social Buttons */
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: auto;
+}
+
+.social-btn {
+  width: 45px;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.social-btn:hover {
+  background: #00d2ff;
+  color: #000;
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px rgba(0, 210, 255, 0.4);
+}
+
+/* --- Right Side: Form --- */
+.contact-form {
+  padding: 40px;
+  background: transparent;
+}
+
+/* Floating Label Inputs */
+.form-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid #333;
+  padding: 15px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-group textarea {
+  resize: none;
+}
+
+/* The Label Styling */
+.form-group label {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  color: #777;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+/* Input Focus Effects */
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #00d2ff;
+}
+
+/* Floating Animation: When focused OR when text is present */
+.form-group input:focus ~ label,
+.form-group input:not(:placeholder-shown) ~ label,
+.form-group textarea:focus ~ label,
+.form-group textarea:not(:placeholder-shown) ~ label {
+  top: -10px;
+  left: 10px;
+  font-size: 0.8rem;
+  background: #00d2ff;
+  color: #000;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+/* Submit Button */
+.btn-submit {
+  background: linear-gradient(90deg, #00d2ff, #3a7bd5);
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-submit:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 210, 255, 0.3);
+}
+
+/* --- Responsive Layout for Mobile --- */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- FOOTER --- */
+.footer {
+  background: #000;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #222;
+}
+
+.footer p {
+  color: #666;
+  font-size: 0.9rem;
+}
