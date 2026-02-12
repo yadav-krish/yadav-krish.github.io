@@ -1,56 +1,92 @@
-# Krishna Yadav – Portfolio Website
+# ⚡ Krishna Yadav | AI & Backend Engineer Portfolio
+## 📸 Portfolio Overview
 
-This repository contains the source code for my personal portfolio website, built to showcase my projects, skills, and professional journey as a Computer Science undergraduate and aspiring software engineer.
+<p align="center">
+  <img src="assets/portfolio_images/home.png" width="48%" />
+  <img src="assets/portfolio_images/about.png" width="48%" />
+</p>
 
-The website is currently under active development and will evolve incrementally.
+<p align="center">
+  <img src="assets/portfolio_images/skills.png" width="48%" />
+  <img src="assets/portfolio_images/project.png" width="48%" />
+</p>
 
-## 🌐 Live Website
-
-https://yadav-krish.github.io
-
-## 📌 Project Status
-
-🚧 **Work in Progress**
-
-The initial project structure has been set up. Core sections, styling, and interactivity will be added step by step with meaningful commits.
-
-## 🛠️ Tech Stack (Planned)
-
-- HTML5
-- CSS3
-- JavaScript (Vanilla)
-- GitHub Pages (Deployment)
-
-Future enhancements may include lightweight animations and performance optimizations.
-
-## 📂 Planned Sections
-
-- Hero / Introduction
-- About Me
-- Skills
-- Projects
-- Certifications
-- Positions of Responsibility
-- Contact Information
-
-## 🎯 Goals of This Project
-
-- Build a clean, responsive, and accessible portfolio
-- Strengthen frontend fundamentals
-- Maintain a realistic and professional GitHub commit history
-- Document the development process clearly
-
-## 📈 Development Approach
-
-This project is being built incrementally:
-
-- Testing each feature and making it best from UI/UX perspective
-- Emphasis on code readability and best practices
-
-## 📬 Contact
-
-Krishna Yadav  
-📧 Email: yadavkrish2709@gmail.com  
-🌐 GitHub: https://github.com/yadav-krish
+<p align="center">
+  <img src="assets/portfolio_images/qualifications.png" width="60%" />
+</p>
 
 ---
+
+## 🚀 About The Project
+
+This portfolio was built to showcase my projects in Artificial Intelligence, Backend Development, and Data Science. It moves beyond static templates by incorporating interactive elements and a modern dark-mode aesthetic.
+
+### ✨ Key Features
+
+- 🌌 Parallax Particle Background – Custom JavaScript animation with floating tech symbols that respond to cursor movement.
+- 💎 Glassmorphism UI – Semi-transparent cards with backdrop blur effects.
+- ▶️ Interactive Project Cards – Click-to-play GIF previews with hover-reveal overlays.
+- 📱 Fully Responsive – Optimized layout with a mobile navigation menu.
+- 📬 Working Contact Form – Integrated with Formspree for email delivery.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** HTML5, CSS3, Vanilla JavaScript (ES6)
+- **Icons:** Font Awesome 6 & Devicon
+- **Fonts:** Google Fonts (Poppins)
+- **Hosting:** GitHub Pages
+
+---
+
+## 📂 Directory Structure
+```
+Here is the clean project structure markdown without comments:
+
+## 📂 Project Structure
+
+
+
+yadav-krish.github.io/
+│
+├── assets/
+│ ├── css/
+│ │ └── style.css
+│ ├── js/
+│ │ └── main.js
+│ └── images/
+│ └── portfolio_images/
+├── index.html
+├── README.md
+
+```
+## 🏃‍♂️ How to Run Locally
+
+- **Clone the repository:**
+```
+git clone https://github.com/yadav-krish/yadav-krish.github.io.git
+```
+- **Navigate to the folder:** Open `index.html` in your browser or use Live Server in VS Code.
+
+---
+
+## 🎨 Customization Guide
+
+If you fork this repository:
+
+- Update the contact form action URL with your own Formspree endpoint.
+- Replace images inside `assets/images/`.
+- Modify project details inside the `#projects` section of `index.html`.
+
+---
+
+## 🤝 Contact
+ 
+- LinkedIn: https://www.linkedin.com/in/krishnayv/
+- Email: krishna.22228@knit.ac.in 
+
+---
+
+© 2026 Krishna Yadav  
+Built with code, curiosity, and a touch of AI.
