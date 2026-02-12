@@ -1007,3 +1007,67 @@ header {
   color: #666;
   font-size: 0.9rem;
 }
+
+/* --- RESPONSIVE NAVBAR (Mobile Fix) --- */
+
+/* Default: Hide the hamburger button on Desktop */
+.menu-btn {
+  display: none;
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.menu-btn:hover {
+  color: #00d2ff;
+}
+
+/* MOBILE STYLES  */
+@media (max-width: 768px) {
+  /*  Show the Hamburger Button */
+  .menu-btn {
+    display: block;
+  }
+
+  /*  Hide the Menu Links by default */
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(10, 10, 10, 0.95);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+    /* Layout: Stack vertically */
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    gap: 25px;
+
+    transform: translateY(-20px);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+
+  /*  The "Active" Class (Added by JS when clicked) */
+  .nav-links.active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  /* Mobile Link Styling */
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links a {
+    display: block;
+    font-size: 1.2rem;
+    padding: 10px 0;
+  }
+}
